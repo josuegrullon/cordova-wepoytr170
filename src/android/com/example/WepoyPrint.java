@@ -13,7 +13,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import woyou.aidlservice.jiuiv5.ICallback;
 import woyou.aidlservice.jiuiv5.IWoyouService;
-//import android.content.*;
 import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
@@ -44,10 +43,10 @@ public class WepoyPrint extends CordovaPlugin {
       String phrase = args.getString(0);
       // Echo back the first argument
         try {
-            woyouService.printerInit(callback);
-            woyouService.printText("Hola sergio from matrices :) \n Que lucha por Dios \n\n\n", callback);
-            woyouService.lineWrap(4, callback);
-            woyouService.printOriginalText(phrase, callback);
+            // woyouService.printerInit(callback);
+            woyouService.lineWrap(1, callback);
+            woyouService.printText(phrase, callback);
+            woyouService.lineWrap(1, callback);
         } catch (RemoteException e) {
             e.printStackTrace();
         }

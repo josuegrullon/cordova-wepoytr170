@@ -1,4 +1,2 @@
-Cordova Plugin Template
+Cordova plugin for WEPOY TR170
 ======
-
-This is a simple starting point for building a Cordova plugin on iOS and Android.
