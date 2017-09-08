@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="my-cordova-plugin"
+    id="cordova-wepoytr170"
     version="1.0.0">
-    <name>Cordova Plugin Template</name>
+    <name>Cordova Wepoy TR170 PRINTER</name>
     <description></description>
     <license>MIT</license>
     <keywords></keywords>
-    <repo>https://github.com/driftyco/cordova-plugin-template.git</repo>
-    <issue>https://github.com/driftyco/cordova-plugin-template/issues</issue>
+    <repo>https://github.com/josuegrullon/cordova-wepoytr170</repo>
+    <issue>https://github.com/josuegrullon/cordova-wepoytr170/issues</issue>
 
     <!-- android -->
     <platform name="android">
@@ -16,11 +16,11 @@
         <runs/>
 
         <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
-        <clobbers target="MyCordovaPlugin" />
+        <clobbers target="wepoyPrint" />
       </js-module>
       <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="MyCordovaPlugin">
-          <param name="android-package" value="com.example.MyCordovaPlugin" />
+        <feature name="wepoyPrint">
+          <param name="android-package" value="com.example.wepoyPrint" />
           <param name="onload" value="true" />
         </feature>
       </config-file>
@@ -32,11 +32,11 @@
     <platform name="ios">
         <js-module src="www/plugin.js" name="plugin">
             <runs/>
-            <clobbers target="MyCordovaPlugin" />
+            <clobbers target="wepoyPrint" />
         </js-module>
         <config-file target="config.xml" parent="/*">
-            <feature name="MyCordovaPlugin">
-                <param name="ios-package" value="MyCordovaPlugin" onload="true" />
+            <feature name="wepoyPrint">
+                <param name="ios-package" value="wepoyPrint" onload="true" />
             </feature>
         </config-file>
 
