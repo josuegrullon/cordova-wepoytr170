@@ -1,12 +1,11 @@
 {
-  "name": "cordova-plugin-template",
+  "name": "wepoy-print",
   "version": "1.0.0",
   "cordova": {
-    "id": "cordova-plugin-template",
+    "id": "wepoy-print",
     "platforms": [
-      "android",
-      "ios",
+      "android"
     ]
   },
-  "description": "A starting point for a Cordova Plugin"
+  "description": "Wepoy print TR170 Js Printer"
 }

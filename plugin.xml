@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="cordova-wepoytr170"
+    id="wepoy-print"
     version="1.0.0">
     <name>Cordova Wepoy TR170 PRINTER</name>
     <description></description>
@@ -16,31 +16,15 @@
         <runs/>
 
         <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
-        <clobbers target="wepoyPrint" />
+        <clobbers target="WepoyPrint" />
       </js-module>
       <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="wepoyPrint">
-          <param name="android-package" value="com.example.wepoyPrint" />
+        <feature name="WepoyPrint">
+          <param name="android-package" value="com.example.WepoyPrint" />
           <param name="onload" value="true" />
         </feature>
       </config-file>
 
-      <source-file src="src/android/com/example/MyCordovaPlugin.java" target-dir="src/com/example/" />
-    </platform>
-
-    <!-- ios -->
-    <platform name="ios">
-        <js-module src="www/plugin.js" name="plugin">
-            <runs/>
-            <clobbers target="wepoyPrint" />
-        </js-module>
-        <config-file target="config.xml" parent="/*">
-            <feature name="wepoyPrint">
-                <param name="ios-package" value="wepoyPrint" onload="true" />
-            </feature>
-        </config-file>
-
-        <header-file src="src/ios/MyCordovaPlugin.h" />
-        <source-file src="src/ios/MyCordovaPlugin.m" />
+      <source-file src="src/android/com/example/WepoyPrint.java" target-dir="src/com/example/" />
     </platform>
 </plugin>

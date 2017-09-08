@@ -25,8 +25,8 @@ import android.app.Activity;
 
 import java.util.Date;
 
-public class wepoyPrint extends CordovaPlugin {
-  private static final String TAG = "wepoyPrint";
+public class WepoyPrint extends CordovaPlugin {
+  private static final String TAG = "WepoyPrint";
 
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     super.initialize(cordova, webView);
@@ -36,7 +36,7 @@ public class wepoyPrint extends CordovaPlugin {
       intent.setAction("woyou.aidlservice.jiuiv5.IWoyouService");
       webView.getContext().startService(intent);//启动打印服务
       webView.getContext().bindService(intent, connService, Context.BIND_AUTO_CREATE);
-    Log.d(TAG, "Initializing wepoyPrint");
+    Log.d(TAG, "Initializing WepoyPrint");
   }
 
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
